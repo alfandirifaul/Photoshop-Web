@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Vision Web</title>
+    <script src="main.js"></script>
+    <!-- add open-cv.js -->
+    <script async src="../../Resource/opencv.js" onload="opencvReady()"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- main page -->
+    <div class="main-page">
+        <!-- side line -->
+        <div class="side-line">
+ 
+        </div>
+        <!-- side bar -->
+        <div class="side-bar">
+            <span class="circle" id="btn-rgb"><i class="material-icons" style="font-size: 36px; color: whitesmoke;">palette</i></span>
+            <span class="circle" id="btn-grayscale"><i class="material-icons" style="font-size: 36px; color: whitesmoke;">contrast</i></span>
+            <span class="circle" id="btn-blur"><i class="material-icons" style="font-size: 36px; color: whitesmoke;">blur_on</i></span>
+            <span class="circle" id="btn-canny"><i class="material-icons" style="font-size: 36px; color: whitesmoke;">grade</i></span>
+            <span class="circle blue-circle"><i class="material-icons" style="font-size: 36px; color: whitesmoke;">videocam</i></span>
+        </div>
+        <!-- right panel -->
+        <div class="right-panel">
+            <!-- header -->
+            <div class="header">
+                <div class="empty-container"></div>
+                <h1 class="title-header">Photoshop Application</h1>
+                <div class="logo-container"><img src="../../Resource/template/logo.png" width="150px" alt=""></div>
+            </div>
+            <!-- tablet container -->
+            <div class="tablet-container">
+                <img id="image-tablet" src="../../Resource/template/tablet.png" width="800" height="600" alt="">
+                <canvas id="canvas-main">
+                    <img id="image-main" src="../../Resource/template/image2.png" width="720" height="540" alt="">
+                </canvas>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

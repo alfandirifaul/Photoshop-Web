@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV Shape Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script async src="../Resource/opencv.js" onload="openCVReady()"></script>
+    
+</head>
+<body>
+   <div class="main-page">
+    <!-- side line -->
+    <div class="side-line"></div>
+
+    <!-- side bar -->
+    <div class="side-bar">
+        <label for="label-title">Photoshop<br>Tools</label>
+        <span class="circle" id="rgb-img-btn"><i class="material-icons" style="font-size: 32px; color: white;">palette</i></span>
+        <span class="circle" id="gray-img-btn"><i class="material-icons" style="font-size: 32px; color: white;">contrast</i></span>
+        <span class="circle" id="edge-img-btn"><i class="material-icons" style="font-size: 32px; color: white;">grade</i></span>
+        <span class="circle" id="contour-img-btn"><i class="material-icons" style="font-size: 32px; color: white;">check_box_outline_blank</i></span>
+        <span class="circle" id="shape-img-btn"><i class="material-icons" style="font-size: 32px; color: white;">format_shapes</i></span>
+        <input type="file" id="upload-img" accept="image/" style="display: none;">
+        <button id="upload-btn">Upload Image</button>
+        <button id="download-btn">Download Image</button>
+    </div>
+
+    <!-- right panel -->
+    <div class="right-panel">
+       <div class="header-panel">
+            <div class="empty-container"></div>
+            <h1 class="title-header">Shapes Detection</h1>
+            <div class="logo-container"><img src="../Resource/template/logo.png" width="150px"></div>
+       </div>
+       <div class="tablet-container">
+            <img src="../Resource/template/tablet.png" id="img-tablet" width="640" height="480">
+            <canvas id="main-canvas">
+                <img src="../Resource/template/shapes2.png" alt="" id="main-img" width="600" height="440">
+            </canvas>
+       </div>
+    </div>
+
+   </div>
+
+
+
+
+   <script src="main.js"></script>
+
+</body>
+</html>

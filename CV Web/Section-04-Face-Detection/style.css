@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.main-page{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+}
+
+/* side line */
+.side-line{
+    background-color: royalblue;
+    width: 25px;
+    height: 100%;
+}
+
+/* side bar */
+.side-bar{
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: royalblue;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle:hover{
+    background-color: rgb(114, 114, 205);
+}
+.circle:active{
+    background-color: darkblue;
+}
+button{
+    color: royalblue;
+    background-color: lightgray;
+    width: 65%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border: none;
+}
+button:hover{
+    background-color: darkgray;
+}
+button:active{
+    background-color: gray;
+}
+#upload-img{
+    margin-top: 35px;
+    margin-bottom: -25px;
+}
+
+/* right panel */
+.right-panel {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-container{
+    height: 75px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.empty-container{
+    padding-right: 170px;
+}
+.header-title{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+.logo-container{
+    padding-right: 25px;
+}
+.tablet-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+#img-tablet{
+    position: absolute;
+    z-index: 1;
+}
+#main-canvas{
+    position: absolute;
+}
+
+
+
+
+
+

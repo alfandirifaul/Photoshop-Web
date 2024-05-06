@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.main-page{
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+}
+
+/* side line */
+.side-line{
+    background-color: royalblue;
+    height: 100%;
+    width: 15px;
+}
+/* side bar */
+.side-bar{
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+label{
+    font-family: "Montserrat", sans-serif;
+    color: royalblue;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+.circle{
+    border-radius: 50%;
+    background-color: royalblue;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.circle:hover{
+    background-color: rgb(114, 114, 205);
+}
+.circle:active{
+    background-color: darkblue;
+}
+button{
+    color: royalblue;
+    background-color: whitesmoke;
+    width: 65%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-top: 35px;
+}
+button:hover{
+    background-color: lightgray;
+}
+button:active{
+    background-color: grey;
+}
+#download-btn{
+    margin-top: 10px;
+
+}
+/* right panel */
+.right-panel{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.header-panel{
+    height: 75px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.empty-container{
+    padding-left: 170px;
+}
+.title-header{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.logo-container{
+    padding-right: 50px;
+}
+.tablet-container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#img-tablet{
+    position: absolute;
+    z-index: 1;
+}
+#main-canvas{
+    position: absolute;
+}
+

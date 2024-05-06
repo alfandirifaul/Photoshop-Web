@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV Color Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script async src="../Resource/opencv.js" onload="openCVReady()"></script>
+</head>
+<body>
+    <!-- main page -->
+    <div class="main-page">
+        <!-- side line -->
+        <div class="side-line"></div>
+
+        <!-- side bar -->
+        <div class="side-bar">
+            <div><label for="trackbar-title" style="font-size: 2rem;">Trackbar</label></div>
+            <!-- lower Hue -->
+            <div>
+                <label for="lower-hue">Hue Min</label>
+                <input type="range" id="lower-hue" min="0" max="179" value="0">
+            </div> 
+            <!-- upper hue -->
+            <div>
+                <label for="upper-hue">Hue Max</label>
+                <input type="range" id="upper-hue" min="0" max="179" value="179">
+            </div>
+            <!-- lower sat -->
+            <div>
+                <label for="lower-sat">Min Sat</label>
+                <input type="range" id="lower-sat" min="0" max="255" value="0">
+            </div>
+            <!-- upper sat  -->
+            <div>
+                <label for="upper-sat">Max Sat</label>
+                <input type="range" id="upper-sat" min="0" max="255" value="255">
+            </div>
+            <!-- lower vib -->
+            <div>
+                <label for="lower-sat">Min Val</label>
+                <input type="range" id="lower-val" min="0" max="255" value="0">
+            </div>
+            <!-- upper vib -->
+            <div>
+                <label for="upper-vib">Max Val</label>
+                <input type="range" min="0" max="255" value="255" id="upper-val">
+            </div>
+            <button id="download-btn">Download Image</button>
+        </div>
+
+        <!-- right panel -->
+        <div class="right-panel">
+            <div class="header">
+                <div class="empty-container"></div>
+                <h1 class="header-title">Color Detection</h1>
+                <div class="logo-container"><img src="../Resource/template/logo.png" alt="" width="135"></div>
+            </div>
+            <div class="tablet-container">
+                <img src="../Resource/template/tablet.png" alt="" id="tablet-img" width="720" height="540">
+                <canvas id="main-canvas">
+                    <img src="../Resource/Image.jpeg" alt="" id="main-img" width="670" height="410">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+
+</html>
