@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.main-page{
+    display: flex;
+    height: 100vh;
+    display: flex;
+}
+/* side line */
+.side-line{
+    background-color: royalblue;
+    width: 25px;
+    height: 100%;
+}
+/* side bar */
+.side-bar{
+    height: 100%;
+    width: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: royalblue;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle:hover{
+    background-color: blue;
+}
+.circle:active{
+    background-color: darkblue;
+}
+.blue-circle{
+    background-color: royalblue(172, 116, 224);
+}
+.blue-circle:hover{
+    background-color: blue;
+}
+
+.blue-circle:active{
+    background-color: darkblue;
+}
+#action-btn{
+    color: royalblue;
+    background-color: whitesmoke;
+    width: 65%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-top: 35px;
+}
+#action-btn:hover{
+    background-color: lightgray;
+}
+#action-btn:active{
+    background-color: grey;
+}
+/* right panel */
+.right-panel{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.empty-container{
+    padding-left: 150px;
+}
+.title-header{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+.logo-container{
+    padding-right: 50px;
+}
+.tablet-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tablet-img{
+    position: absolute;
+    z-index: 1;
+}
+#main-canvas{
+    position: absolute;
+}
+#videocam{
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+
