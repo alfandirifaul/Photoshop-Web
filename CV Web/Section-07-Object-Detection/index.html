@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Photoshop</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icon logo -->
+    <link rel="icon" href="../Resource/pams-logo.png">
+    <!-- link to google font and google icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- link to opencv.js -->
+    <script async src="../Resource/opencv.js" onload="openCVReady()"></script>
+
+</head>
+<body>
+    <!-- S: Main Page -->
+     <div class="main-page">
+        <!-- S: side line -->
+         <div class="side-line"></div>
+        <!-- E: side line -->
+
+        <!-- S: side bar -->
+         <div class="side-bar">
+            
+            <!-- Title -->
+            <h3 class="title">Photoshop <br> Web</h3>
+
+            <!-- Upload Button -->
+            <input id="file-upload" type="file" accept="image/*" style="display: none;" >
+            <label for="file-upload" class="circle">
+                <i class="material-icons" style="font-size: 36px; color: white;">cloud_upload</i>
+            </label>
+
+            <!-- S: RGB Button -->
+            <span class="circle" id="rgb-img">
+                <i class="material-icons" style="font-size: 36px; color: white;">palette</i>
+            </span>
+            <!-- E: RGB Button -->
+
+            <!-- S: Grayscale Button -->
+            <span class="circle" id="gray-img">
+                <i class="material-icons" style="font-size: 36px; color: white;">contrast</i>
+            </span>
+            <!-- E: Grayscale Button -->
+
+            <!-- S: Image Detection Button -->
+            <span class="circle" id="img-detection">
+                <i class="material-icons" style="font-size: 36px; color: white;">fullscreen</i>
+            </span>
+            <!-- E: Image Detection Button -->
+
+            <!-- S: Object Detection Video Button -->
+            <span class="circle" id="video-detection">
+                <i class="material-icons" style="font-size: 36px; color: white;">video_camera_front</i>
+            </span>
+            <!-- E: Object Detection Video Button -->
+
+            <!-- S: Webcam Enable Button -->
+            <button id="enable-btn">Enable Webcam</button>
+            <!-- E: Webcam Enable Button -->
+
+            <!-- S: Copyright -->
+            <p class="copyright">
+                &copy; 2024 Pams Edu. All rights reserved.
+            </p>
+            <!-- E: Copyright -->
+
+         </div>
+        <!-- E: side bar -->
+
+        <!-- S: Right Panel -->
+         <div class="right-panel">
+            <!-- S: Header -->
+             <div class="header">
+                <div class="empty-container"></div>
+                <h1 class="header-title">
+                    Object Detection using COCO-SSD Model
+                </h1>
+                <img src="../Resource/template/logo.png" alt="" class="img-logo">
+             </div>
+            <!-- E: Header -->
+
+            <!-- S: Tablet Area -->
+              <div class="tablet-container">
+                <img src="../Resource/template/tablet.png" alt="" id="tablet-img" height="520" width="680">
+                <!-- canvas -->
+                 <canvas id="main-canvas">
+                    <img src="../Resource/template/bus.jpg" alt="" id="img-main" width="640" height="480">
+                    <video src="" autoplay playsinline id="video-main" height="480" width="640"></video>
+                 </canvas>
+              </div>
+            <!-- E: Tablet Area -->
+         </div>
+        <!-- E: Right Panel -->
+    </div>
+    <!-- E: Main Page -->
+
+    <!-- link to js -->
+    <script src="main.js"></script>
+    <script src="../Resource/utils.js"></script>
+    <!-- load tensorflow js -->
+    <!-- Load TensorFlow js this is required to use the COCO SSD Model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+    <!-- Load the COCO SSD Model -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+
+    </body>
+</html>

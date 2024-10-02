@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pams-edu</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- set icon of web -->
+    <link rel="icon" href="../../Resource/pams-logo.png">
+    <!-- montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- link to icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <!-- link to opencv.js -->
+     <script async src="../../Resource/opencv.js" onload="openCVReady()"></script>
+</head>
+<body>
+    <!-- S: Main Page  -->
+    <div class="main-page">
+        <!-- S: Side Line -->
+        <div class="side-line"></div>
+        <!-- E: Side Line -->
+
+        <!-- S: Side Bar -->
+        <div class="side-bar">
+            <!-- S: Title -->
+             <h3 class="title">Photoshop <br> Web</h3>
+            <!-- E: Title -->
+            <!-- S: Input Video -->
+            <input type="file" id="video-input" accept="video/*" style="display: none;">
+            <label for="video-input" class="circle blue-circle">
+                <i class="material-icons" style="font-size: 36px; color: white;">cloud_upload</i>
+            </label>
+            <!-- E: Input Video -->
+            <!-- S: Play Pause Button -->
+            <span class="circle blue-circle" id="action-btn">
+                <i class="material-icons" style="font-size: 36px; color: white; ">videocam</i>
+            </span>
+            <!-- E: Play Pause Button -->
+            <!-- S: copyright -->
+             <p class="copyright">
+                &copy; 2024 Pams Edu. <br> All rights reserved.
+             </p>
+            <!-- E: copyright -->
+        </div>
+        <!-- E: Side Bar -->
+
+        <!-- S: Right Panel -->
+         <div class="right-panel">
+            <!-- S: Header -->
+            <div class="header">
+                <div class="empty-container"></div>
+                <h1 class="header-title">Face Detection</h1>
+                <div>
+                    <img class="logo-container" src="../../Resource/template/logo.png" alt="">
+                </div>
+            </div>
+            <!-- E: Header -->
+
+            <!-- S: Tablet Container -->
+            <div class="tablet-container">
+                <img id="tablet-img" src="../../Resource/template/tablet.png" height="600" width="800">
+                <canvas id="main-canvas" height="540" width="740">
+                    <video src="../../" id="main-video" height="540" width="740"></video>
+                </canvas>
+            </div>
+            <!-- E: Tablet Container -->
+         </div>
+        <!-- E: Right Panel -->
+    </div>
+    <!-- E: Main-Page -->
+
+    <!-- S: link to js -->
+    <script src="main.js"></script>
+    <script src="../../Resource/utils.js"></script>
+    <!-- E: link to js -->
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pams-edu</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../Resource/pams-logo.png">
+
+    <script async src="../../Resource/opencv.js" onload="openCVready()"></script>
+</head>
+<body>
+
+    <input type="file" accept="video/*" id="input-video">
+    <button id="action-btn">Play/Pause</button>
+    <video src="../../Resource/template/output.mp4" id="main-video" width="350" height="300"></video>
+    <canvas id="main-canvas" width="350" height="300"></canvas>
+
+    <script src="main.js"></script>
+    <script src="../../Resource/utils.js"></script>
+</body>
+</html>
