@@ -1,4 +1,4 @@
-function handleImageInput(event){
+    function handleImageInput(event){
     const fileInput = event.target;
     const file = fileInput.files[0];
     if(file){
