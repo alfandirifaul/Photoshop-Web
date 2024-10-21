@@ -22,14 +22,13 @@
          <div class="side-line"></div>
         <!-- E: side line -->
 
-        <!-- S: side bar -->
+        <!-- S: sidebar -->
          <div class="side-bar">
-            
             <!-- Title -->
             <h3 class="title">Photoshop <br> Web</h3>
 
             <!-- Upload Button -->
-            <input id="file-upload" type="file" accept="image/*" style="display: none;" >
+            <input id="file-upload" type="file" accept="image/* video/*" style="display: none;" >
             <label for="file-upload" class="circle">
                 <i class="material-icons" style="font-size: 36px; color: white;">cloud_upload</i>
             </label>
@@ -69,27 +68,28 @@
             <!-- E: Copyright -->
 
          </div>
-        <!-- E: side bar -->
+        <!-- E: sidebar -->
 
         <!-- S: Right Panel -->
          <div class="right-panel">
             <!-- S: Header -->
              <div class="header">
                 <div class="empty-container"></div>
-                <h1 class="header-title">
+                <h2 class="header-title">
                     Object Detection using COCO-SSD Model
-                </h1>
+                </h2>
                 <img src="../Resource/template/logo.png" alt="" class="img-logo">
              </div>
             <!-- E: Header -->
 
             <!-- S: Tablet Area -->
               <div class="tablet-container">
+                <!-- image -->
                 <img src="../Resource/template/tablet.png" alt="" id="tablet-img" height="540" width="720">
                 <!-- canvas -->
                  <canvas id="main-canvas">
-                    <img src="../Resource/template/bus.jpg" alt="" id="img-main" width="640" height="480">
-                    <video src="" autoplay playsinline id="video-main" height="480" width="640"></video>
+                    <img src="../Resource/template/bus.jpg" alt="" id="img-main" width="680" height="480">
+                    <video muted controls src="../Resource/template/demo2.mp4" id="video-main" height="480" width="680"></video>
                  </canvas>
               </div>
             <!-- E: Tablet Area -->

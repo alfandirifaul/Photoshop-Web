@@ -1,0 +1,141 @@
+/* Complete Page */
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+/* Main Page */
+.main-page{
+    display: flex;
+}
+
+/* Side Line*/
+.side-line{
+    width: 2%;
+    height: 100vh;
+    background-color: royalblue;
+}
+
+/* S: Side Bar*/
+.side-bar{
+    background-color: #f7f7f7;
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-between;
+}
+
+    /* Title */
+    .title{
+        font-family: 'montserrat', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    /* Circle */
+    .circle{
+        background-color: royalblue;
+        border-radius: 50%;
+        padding: 20px;
+        display: flex;
+        height: 75px;
+        width: 75px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -25px;
+    }
+    .circle:hover{
+        background-color: #164dde;
+    }
+    .circle:active{
+        background-color: #0a2239;
+    }
+
+    /* Button */
+    #enable-btn{
+        background-color: royalblue;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 10px;
+        padding: 7px;
+    }
+    #enable-btn:hover{
+        background-color: #164dde;
+    }
+    #enable-btn:active{
+        background-color: #0a2239;
+    }
+
+    /* Copyright */
+    .copyright{
+        margin-bottom: -50px;
+        font-size: 14px;
+    }
+/* E: Side Bar  */
+
+/* S: Right Panel*/
+.right-panel{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* S: Header */
+.header{
+    width: 100%;
+    background-color: royalblue;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+    /* Empty Container */
+    .empty-container{
+        margin-left: 200px;
+    }
+
+    /* Header Title */
+    .header-title{
+        font-family: "Montserrat", sans-serif;
+    }
+
+    /* Image Logo */
+    .img-logo{
+        width: 150px;
+    }
+    /* E: Header */
+
+    /* S: Tablet Area */
+    .tablet-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #tablet-img{
+        position: absolute;
+        z-index: 1;
+    }
+    #main-canvas{
+        position: absolute;
+    }
+
+    /* E: Tablet Area */
+
+/* E: Right Panel*/
